@@ -1,0 +1,528 @@
+
+//--------------------------------RESET CODE-------------------------------------------->
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//--------------------------------RESET CODE-------------------------------------------->
+
+
+body{
+    background:black !important;
+}
+
+
+
+
+// -------------------------NAV BAR---------------------------------------------------------------------->
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #f2f2f2;
+}
+nav{
+  background: #1b1b1b;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  //float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon, input{
+  display: none;
+}
+
+
+
+
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+.ali{
+
+
+    @media only screen and (max-width: 600px) {
+   display: none;
+    }
+}
+
+
+
+
+.qutu1{
+    width: 100%;
+    height: 100vh;
+    //background-color: red;
+    background: url("q1.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+justify-content: space-evenly;
+
+
+.ali50{
+    height: 50vh;
+    width: 500px;
+   // background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   // border: 2px solid white;
+
+    button{
+        width: 150px;
+        height: 40px;
+     background-color: orchid;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     margin-top: 5%;
+    }
+
+.ikon{
+    margin-top: 5%;
+    width: 200px;
+    height:50px ;
+    //background-color: white;
+    text-align: center;
+
+   i{
+       font-size: 35px;
+       color:aquamarine;
+   }
+}
+
+img{
+    width: 50%;
+}
+    
+}
+h1{
+    color: white;
+    
+    @media only screen and (max-width: 991px) {
+ font-size: 25px;
+    }
+}
+
+
+
+
+
+}
+
+
+
+.ali51{
+    height: 40vh;
+    width: 500px;
+  //  background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+    h2{
+        color: white;
+    }
+p{
+    font-size: 18px;
+    margin-top: 5%;
+    color: white;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+ background-color: orchid;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ margin-top: 5%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+.ali52{
+    height: 80vh;
+    width: 500px;
+   // background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+
+    h2{
+        color: white;
+    }
+p{
+    font-size: 18px;
+    margin-top: 5%;
+    color: white;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+ background-color: orchid;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ margin-top: 5%;
+}
+
+img{
+    height: 50%;
+    width: 100%;
+}
+
+
+}
+
+
+
+
+
+
+
+.qutu2{
+    width: 100%;
+    height: 80vh;
+    //background-color: red;
+    background: url("q9.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+justify-content: space-evenly;
+}
+
+
+
+
+
+
+.ali53{
+    height: 100%;
+    width: 500px;
+ // background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+    h2{
+        color: white;
+    }
+p{
+    font-size: 18px;
+    margin-top: 5%;
+    color: white;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+ background-color: orchid;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ margin-top: 5%;
+}
+
+
+ul{
+    color:white;
+    font-size: 20px;
+    margin-top: 5%;
+    @media only screen and (max-width: 991px) {
+       display: block;
+           }
+
+           @media only screen and (max-width: 970px) {
+            font-size: 15px;
+                }
+}
+
+}
+
+
+
+
+
+
+
+.ali54{
+    height: 30vh;
+    width: 500px;
+    //background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+    h2{
+        color: white;
+    }
+p{
+    font-size: 18px;
+    margin-top: 5%;
+    color: white;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+ background-color: orchid;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ margin-top: 5%;
+}
+
+img{
+    height: 100%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+
+}
+
+
+.ab{
+    margin-top: 10%;
+}
