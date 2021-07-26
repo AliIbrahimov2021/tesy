@@ -1,0 +1,503 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: 80px;
+}
+
+.navbar-nav i {
+  font-size: 30px;
+  color: grey;
+}
+
+.navbar-nav :hover {
+  color: red;
+}
+
+.navbar-nav a {
+  font-size: 20px;
+  font-weight: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-nav .ali {
+    display: none;
+  }
+}
+
+.qutu100 {
+  width: 100%;
+  height: 95vh;
+  background-color: #edf2fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qutu100 .ali0 {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qutu100 .ali0 img {
+  width: 50%;
+}
+
+.qutu100 .ali0 p {
+  color: #606163;
+  font-size: 25px;
+}
+
+.qutu100 .ali01 {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-box {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+}
+
+.img-box img {
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: bottom 1s, left 1s;
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+
+.img-box:hover .main-img {
+  left: 54%;
+}
+
+.profile-area {
+  padding: 80px 0;
+  background-color: #edf2fc;
+}
+
+.profile-area .card {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.profile-area .card .img1 img {
+  height: 200px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+
+.profile-area .card .img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-top: -80px;
+}
+
+.card:hover .img2 img {
+  border-color: darkcyan;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.main-text {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-text h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.main-text p {
+  font-size: 16px;
+  padding: 0 35px;
+}
+
+.socials {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.socials i {
+  font-size: 20px;
+  color: darkcyan;
+  padding: 0 10px;
+}
+
+.salam {
+  font-size: 50px;
+  margin-left: 40%;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .salam {
+    font-size: 40px;
+    margin-left: 20%;
+  }
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0px;
+  grid-gap: 40px;
+}
+
+.cards img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container1 {
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container1:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.7;
+}
+
+.card1 > .container1:after {
+  background-image: linear-gradient(135deg);
+}
+
+.card2 > .container1:after {
+  background-image: linear-gradient(135deg);
+}
+
+.card3 > .container1:after {
+  background-image: linear-gradient(135deg);
+}
+
+.details {
+  padding: 20px 10px;
+}
+
+.details > h5 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.details > p {
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.qutu55 {
+  width: 100%;
+  height: 5vh;
+}
+
+.qutu55 h1 {
+  margin-left: 45%;
+  width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .qutu55 h1 {
+    margin-left: 30%;
+  }
+}
+
+.qutu555 {
+  overflow: hidden;
+}
+
+.bg-clr {
+  background-color: gainsboro;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: orange;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: orange;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active1, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+.qutu566 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.photo53 {
+  width: 200px;
+  height: 200px;
+}
+
+q {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mySlides {
+  background: url(a-10.jpg);
+  background-size: cover;
+  margin-top: 5%;
+}
+
+.ad {
+  color: orange;
+}
+
+.zoom {
+  padding: 50px;
+  background-image: url(a22.jpg);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  background: url(car1.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.wro {
+  font-size: 20px;
+  color: orange;
+}
+
+.wro2 {
+  font-size: 15px;
+  color: black;
+  line-height: 25px;
+}
+
+.sel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2%;
+}
+
+.wako {
+  margin-top: 10%;
+}
+
+.aq1 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.cars {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 35px;
+}
+/*# sourceMappingURL=nav.css.map */
